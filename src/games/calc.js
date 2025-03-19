@@ -21,6 +21,8 @@ const generateRound = () => {
     case '*':
       correctAnswer = num1 * num2;
       break;
+    default:
+      throw new Error(`Unexpected operator: ${operator}`);
   }
 
   return [`${num1} ${operator} ${num2}`, String(correctAnswer)];

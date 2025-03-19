@@ -1,7 +1,9 @@
 import runGame from '../index.js';
 
 // Функция для генерации случайного числа в диапазоне min-max
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const getRandomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
 // Функция для генерации арифметической прогрессии
 const generateProgression = (start, step, length) => Array.from({ length }, (_, i) => start + i * step);
