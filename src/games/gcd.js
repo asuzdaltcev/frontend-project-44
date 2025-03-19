@@ -2,10 +2,12 @@ import runGame from '../index.js';
 
 // Функция для вычисления НОД (алгоритм Евклида)
 const getGCD = (a, b) => {
-  while (b !== 0) {
-    [a, b] = [b, a % b];
+  let x = a;
+  let y = b;
+  while (y !== 0) {
+    [x, y] = [y, x % y];
   }
-  return a;
+  return x;
 };
 
 // Функция для генерации случайного числа в диапазоне min-max
