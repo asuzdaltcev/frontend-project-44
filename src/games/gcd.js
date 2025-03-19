@@ -11,7 +11,7 @@ const getGCD = (a, b) => {
 // Функция для генерации случайного числа в диапазоне min-max
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const gameRules = "Find the greatest common divisor of given numbers.";
+const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const generateRound = () => {
   const num1 = getRandomNumber(1, 100);

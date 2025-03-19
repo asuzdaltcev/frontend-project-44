@@ -8,7 +8,7 @@ const runGame = (gameRules, generateRound) => {
   console.log(`Hello, ${userName}!`);
   console.log(gameRules);
 
-  for (let i = 0; i < roundsToWin; i++) {
+  for (let i = 0; i < roundsToWin; i += 1) {
     const [question, correctAnswer] = generateRound();
     console.log(`Question: ${question}`);
 
